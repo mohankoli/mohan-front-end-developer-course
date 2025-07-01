@@ -2,7 +2,6 @@ In JavaScript, data types represent the different kinds of values that can be st
 
 JavaScript has two main categories of data types
 
-
 JavaScript Data Types
 ├── Primitive
 │   ├── Number
