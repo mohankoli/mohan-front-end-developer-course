@@ -1,7 +1,10 @@
-In JavaScript, data types represent the different kinds of values that can be stored and manipulated in a program. 
+### JavaScript Data Types
 
-JavaScript has two main categories of data types
+In JavaScript, data types represent the different kinds of values that can be stored and manipulated in a program.
 
+JavaScript has two main categories of data types:
+
+```
 JavaScript Data Types
 ├── Primitive
 │   ├── Number
@@ -15,4 +18,6 @@ JavaScript Data Types
     ├── Object
     │   ├── Array
     │   ├── Function
-    │   ├── Date, RegExp, etc.
+    │   └── Date, RegExp, etc.
+```
+
