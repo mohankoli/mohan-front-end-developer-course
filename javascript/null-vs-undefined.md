@@ -18,6 +18,7 @@ let i = undefined;
 console.log(i); // undefined
 
 Q4) null vs undefined (1-liner diff)
+
 👉 null is intentional empty; undefined means uninitialized.
 let a = null, b;
 console.log(a, b); // null undefined
