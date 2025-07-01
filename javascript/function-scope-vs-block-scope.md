@@ -45,3 +45,17 @@ function test() {
 ```
 
 > Always prefer `let`/`const` for block-level scope and better control.
+
+### Q.4) What is the Temporal Dead Zone (TDZ) in JavaScript?
+
+👉 The **Temporal Dead Zone** is the time between entering a block and when a `let` or `const` variable is declared, during which accessing the variable causes a **ReferenceError**.
+
+```js
+{
+  console.log(a); // ReferenceError
+  let a = 5;
+}
+```
+
+> Variables declared with `let` or `const` are hoisted but **not initialized** — accessing them before declaration results in an error.
+
