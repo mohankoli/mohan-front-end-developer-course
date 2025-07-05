@@ -1,19 +1,40 @@
-## 🔹 `call()` – Short Note
+## 🔹 `call()`, `apply()`, `bind()` – Short Comparison
 
-- `call()` is used to borrow a function from one object and use it for another.
-- It sets the value of `this` inside the function.
-- Arguments are passed one by one.
+| Method   | Use Case                               | Arguments              | Invoked Immediately? | Example Output                       |
+|----------|----------------------------------------|------------------------|-----------------------|--------------------------------------|
+| `call()` | Borrow function, pass args one by one  | Arguments separately   | ✅ Yes                | `obj = { name: 'peter', age: 20 }`   |
+| `apply()`| Same as `call()`, but args in array    | Arguments in array     | ✅ Yes                | `obj = { name: 'jill', age: 30 }`    |
+| `bind()` | Create new function with fixed `this`  | Arguments separately   | ❌ No (call later)    | `obj = { name: 'romeo', age: 21 }`   |
 
-### 🧪 Example:
+---
+
+### 🧪 Combined Code Example:
 ```js
-const obj = { name: 'Mohan', age: 35 };
-
-let setName = function(name) {
-    this.name = name;
+const obj = {
+  name: "john", 
+  age: 20
 };
 
-setName.call(obj, 'Shrikar');
+const setName = function(name) {
+  this.name = name;
+};
 
-console.log(obj); // { name: 'Shrikar', age: 35 }
+// ✅ Using call()
+setName.call(obj, 'peter');
+console.log(obj); // { name: 'peter', age: 20 }
 
+const setProfile = function(name, age) {
+  this.name = name;
+  this.age = age;
+};
 
+let params = ['jill', 30];
+
+// ✅ Using apply()
+setProfile.apply(obj, params);
+console.log(obj); // { name: 'jill', age: 30 }
+
+// ❌ Using bind() (returns a new function)
+const boundObj = setProfile.bind(obj);
+boundObj('romeo', 21);
+console.log(obj); // { name: 'romeo', age: 21 }
