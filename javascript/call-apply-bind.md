@@ -16,6 +16,7 @@ setName.call(obj, 'Shrikar');
 
 console.log(obj); // { name: 'Shrikar', age: 35 }
 
+
 ## 🔹 `apply()` – Short Note
 
 - `apply()` is used to borrow a function from one object and use it for another.
