@@ -1,20 +1,18 @@
-# JavaScript: `call`, `apply`, and `bind` – Short Notes with Real-World Use Cases
+## 🔹 `call()` – Short Note
 
-These methods help control the `this` context of a function.
+- `call()` is used to borrow a function from one object and use it for another.
+- It sets the value of `this` inside the function.
+- Arguments are passed one by one.
 
----
-
-## 🔹 `call()`
-
-- Invokes the function immediately.
-- Pass arguments one by one.
-- ✅ Useful when borrowing methods from other objects.
-
+### 🧪 Example:
 ```js
-function greet(city) {
-  console.log(`Hello, I am ${this.name} from ${city}`);
-}
-const person = { name: "Mohan" };
+const obj = { name: 'Mohan', age: 35 };
 
-greet.call(person, "Pune"); 
-// Output: Hello, I am Mohan from Pune
+let setName = function(name) {
+    this.name = name;
+};
+
+setName.call(obj, 'Shrikar');
+
+console.log(obj); // { name: 'Shrikar', age: 35 }
+
