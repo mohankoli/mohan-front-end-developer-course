@@ -11,7 +11,7 @@ In simple terms, **closure** is a feature in JavaScript where an inner function 
 
 ```javascript
 function example() {
-  let blog = "learnersbucket";
+  let blog = "My js blog";
   
   function displayBlog() {
     console.log(blog); // Inner function accessing outer variable
@@ -21,4 +21,4 @@ function example() {
 }
 
 example();
-// Output: "learnersbucket"
+// Output: "My js blog"
