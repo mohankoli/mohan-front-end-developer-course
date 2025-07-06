@@ -1,6 +1,7 @@
 # JavaScript Currying
 
-**Currying** means breaking a function with multiple arguments into a series of functions that each take one argument.
+**Currying** is a functional programming technique in JavaScript where a function with multiple arguments is transformed into a series of functions that each take a single argument.
+
 
 In simple terms, it allows you to call functions like this: `func(a)(b)` instead of `func(a, b)`.
 
