@@ -1,6 +1,6 @@
 # JavaScript Closures
 
-In simple terms, **closure** is a feature in JavaScript where an inner function has access to the variables and parameters of its outer function, even after the outer function has returned.
+In simple terms, **closure** is a feature in JavaScript where an inner function has access to the variables and parameters of its outer function, even after the outer function has finished excution.
 
 ## Key Points
 - A closure remembers the scope in which it was created.
