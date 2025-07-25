@@ -31,3 +31,31 @@ const person = {
   first: "Brittney",
   last: "Postma"
 };
+
+# 📞 Call Stack
+
+The **call stack** keeps track of **where we are in the code** so that the program can execute in the correct order.
+
+### Key Points:
+- Things are **pushed to the top** of the stack when a function is called.
+- They are **popped off** the stack when the function completes.
+- It operates in **LIFO (Last In, First Out)** order.
+- Each item in the call stack can **reference a location in the memory heap**.
+
+---
+
+## 🔁 Example: Call Stack in Action
+
+```javascript
+function subtractTwo(num) {
+  return num - 2;
+}
+
+function calculate() {
+  const sumTotal = 4 + 5;
+  return subtractTwo(sumTotal);
+}
+
+debugger;
+calculate();
+
