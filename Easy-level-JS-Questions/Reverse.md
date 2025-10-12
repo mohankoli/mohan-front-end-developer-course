@@ -1,18 +1,20 @@
-// 2. Reverse a String (Using Loop)
+# JavaScript String Reverse Utilities
+
+```javascript
+// 1. Reverse a String (Using Loop)
 const reverseStringLoop = (str) => {
     let reversed = '';
     for (let i = str.length - 1; i >= 0; i--) {
         reversed += str[i];
     }
-    console.log(reversed);
+    return reversed;
 }
 
-reverseStringLoop('test'); // Output: 'tset'
+console.log(reverseStringLoop('test')); // Output: 'tset'
 
-// 3. Reverse a String (Using Built-in Functions)
+// 2. Reverse a String (Using Built-in Functions)
 const reverseString = (str) => {
-    let reversed = str.split('').reverse().join('');
-    return reversed;
+    return str.split('').reverse().join('');
 }
 
 console.log(reverseString('Mohan')); // Output: 'nahoM'
