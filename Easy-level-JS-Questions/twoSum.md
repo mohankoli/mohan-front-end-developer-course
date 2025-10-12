@@ -1,0 +1,23 @@
+# Two Sum Problem in JavaScript
+
+[Watch explanation on YouTube](https://www.youtube.com/watch?v=vWNYCIj5Dm0)
+
+```javascript
+// Fixed Two Sum Implementation
+let nums = [2, 7, 11, 15]; 
+let target = 13;
+
+let twoSum = (nums, target) => {
+    let mp = new Map();
+    for (let i = 0; i < nums.length; i++) {
+        let rem = target - nums[i];
+        if (mp.has(rem)) {
+            return [mp.get(rem), i]; // corrected get method
+        } else {
+            mp.set(nums[i], i);
+        }
+    }
+    return []; // if no pair found
+}
+
+console.log(twoSum(nums, target)); // Output: [0, 2] because 2 + 11 = 13
