@@ -1,5 +1,7 @@
 # 🧩 Find First Non-Repeating Character in a String
 
+https://www.youtube.com/watch?v=b7mYMiTthOQ
+
 ## 🧠 Problem Statement
 Given a string, find the **first non-repeating character** in it.  
 Return the character if found, otherwise return `null`.
