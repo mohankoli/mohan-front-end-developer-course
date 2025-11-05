@@ -1,4 +1,4 @@
-# Front-End Development Notes
+# Day 1 (05-nov-2025) Notes
 
 ---
 
