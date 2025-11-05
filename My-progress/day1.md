@@ -11,7 +11,7 @@
 1. Implement a function to check if two strings are anagrams. [Coding] [Easy] [JS]
   -  https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/Easy-level-JS-Questions/Anagrams.md
 2. Reverse a string without using built-in reverse. [Coding] [Easy] [JS]
-   - https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/Easy-level-JS-Questions/Reverse.md
+  - https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/Easy-level-JS-Questions/Reverse.md
 
 ---
 
