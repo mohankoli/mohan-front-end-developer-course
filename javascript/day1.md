@@ -10,3 +10,10 @@ https://www.youtube.com/watch?v=a0S1iG3TgP0&t=18s
   console.log(a); // ReferenceError
   let a = 5;
 }
+
+4. System Design
+https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/System-design/Modal-Component-Design.md
+
+5. Coding Questions
+    1. Implement a function to check if two strings are anagrams. [Coding] [Easy] [JS]
+2. Reverse a string without using built-in reverse. [Coding] [Easy] [JS]
