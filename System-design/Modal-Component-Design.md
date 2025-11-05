@@ -39,7 +39,6 @@
 ## 🧠 10–15 min — State & Data Management
 
 ### **Local State**
-```ts
 isOpen: boolean
 previousActiveElement: HTMLElement | null
 focusableElements: HTMLElement[]
