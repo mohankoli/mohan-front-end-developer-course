@@ -26,7 +26,7 @@ sayHello(); // ✅ Works, even though defined later
 function sayHello() {
   console.log("Hello!");
 }
-
+---
 # Variable Hoisting in JavaScript
 
 Variables declared with `var`, `let`, and `const` are **hoisted differently**.
