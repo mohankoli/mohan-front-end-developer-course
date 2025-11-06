@@ -14,3 +14,13 @@
   - https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/Easy-level-JS-Questions/isPalindrome.md
 
 ---
+
+## 4. What is hoisting? How does it affect functions and variables?
+- https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/javascript/hoisting.md
+
+---
+
+## 5. Explain closures with a practical example.
+
+👉 **https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/javascript/7.closure.md**
+
