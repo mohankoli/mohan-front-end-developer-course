@@ -16,16 +16,6 @@ So during execution:
 
 ---
 
-## 🔹 Function Hoisting
-
-Function **declarations** are fully hoisted — both their name and their body.
-
-```js
-sayHello(); // ✅ Works, even though defined later
-
-function sayHello() {
-  console.log("Hello!");
-}
 ---
 # Variable Hoisting in JavaScript
 
@@ -38,6 +28,18 @@ Variables declared with `var`, `let`, and `const` are **hoisted differently**.
 | `const`          | ✅ Yes    | ❌ No                       | ❌ No (Temporal Dead Zone)     |
 
 ---
+
+
+## 🔹 Function Hoisting
+
+Function **declarations** are fully hoisted — both their name and their body.
+
+```js
+sayHello(); // ✅ Works, even though defined later
+
+function sayHello() {
+  console.log("Hello!");
+}
 
 ## Example with `var`
 
