@@ -26,3 +26,25 @@ sayHello(); // ✅ Works, even though defined later
 function sayHello() {
   console.log("Hello!");
 }
+
+# Variable Hoisting in JavaScript
+
+Variables declared with `var`, `let`, and `const` are **hoisted differently**.
+
+| Declaration Type | Hoisted? | Initialized to `undefined`? | Accessible before declaration? |
+|------------------|-----------|-----------------------------|--------------------------------|
+| `var`            | ✅ Yes    | ✅ Yes                      | ⚠️ Yes, but `undefined`        |
+| `let`            | ✅ Yes    | ❌ No                       | ❌ No (Temporal Dead Zone)     |
+| `const`          | ✅ Yes    | ❌ No                       | ❌ No (Temporal Dead Zone)     |
+
+---
+
+## Example with `var`
+
+```js
+console.log(x); // undefined
+var x = 10;
+
+console.log(y); // ❌ ReferenceError
+let y = 10;
+
