@@ -8,8 +8,8 @@
 ---
 
 ## 2. Coding Questions
-1. Two Sum Problem in JavaScript. [Coding] [Easy] [JS]
-  -  https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/Easy-level-JS-Questions/twoSum.md
+1. Find the first non-repeating character in a string. [Coding] [Easy] [JS]
+  -  https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/Easy-level-JS-Questions/find-first-non-repeating-character.md
 2.  Check if a String is a Palindrome. [Coding] [Easy] [JS]
   - https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/Easy-level-JS-Questions/isPalindrome.md
 
