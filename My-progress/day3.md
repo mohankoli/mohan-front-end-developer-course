@@ -8,11 +8,10 @@
 ---
 
 ## 2. Coding Questions
-1. Find the first non-repeating character in a string. [Coding] [Easy] [JS]
+1. Count character frequencies in a string (return an object).[Coding] [Easy] [JS]
+  - https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/Easy-level-JS-Questions/Frequency-Counter.md
+2. Find the first non-repeating character in a string. [Coding] [Easy] [JS]
   -  https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/Easy-level-JS-Questions/find-first-non-repeating-character.md
-2.  Check if a String is a Palindrome. [Coding] [Easy] [JS]
-  - https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/Easy-level-JS-Questions/isPalindrome.md
-
 ---
 
 ## 4. What is hoisting? How does it affect functions and variables?
