@@ -48,5 +48,17 @@ setTimeout(() => console.log("Macrotask"), 0);
 Promise.resolve().then(() => console.log("Microtask"));
 console.log("End");
 
+### 6. Explain 'this' Binding Rules
+
+`this` refers to the object that is executing the current function.  
+It’s determined **by how the function is called**, not where it’s defined.
+
+#### 1. Default Binding
+When a function is called alone (not as a method):
+```js
+function show() {
+  console.log(this);
+}
+show(); // In strict mode: undefined; else: window (global)
 
 
