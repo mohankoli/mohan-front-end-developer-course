@@ -17,8 +17,11 @@
 # 🌀 Event Loop — Microtasks vs Macrotasks
 
 ## **Event Loop**
-JavaScript is single-threaded.  
-The **Event Loop** manages async operations by moving callbacks from task queues to the call stack once it’s empty — enabling non-blocking behavior.
+
+The Event Loop keeps checking the call stack.  
+When the call stack is empty, it takes tasks from the callback queue and moves them to the call stack for execution.  
+This allows JavaScript to handle async tasks without blocking the main thread.
+
 
 ---
 
