@@ -14,7 +14,7 @@
   -  https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/Easy-level-JS-Questions/find-first-non-repeating-character.md
 ---
 
-### 6. Explain 'this' Binding Rules
+### Explain 'this' Binding Rules
 
 `this` refers to the **current context** — the object that is **executing** the function.  
 Its value depends on **how** the function is called, not on **where** it is defined.
