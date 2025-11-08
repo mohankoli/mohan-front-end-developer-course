@@ -16,9 +16,8 @@
 
 ### 6. Explain 'this' Binding Rules
 
-`this` refers to the object that is executing the current function.  
-It’s determined **by how the function is called**, not where it’s defined.
-
+`this` refers to the **current context** — the object that is **executing** the function.  
+Its value depends on **how** the function is called, not on **where** it is defined.
 
 # 🌀 Event Loop — Microtasks vs Macrotasks
 
