@@ -14,13 +14,36 @@
   -  https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/Easy-level-JS-Questions/find-first-non-repeating-character.md
 ---
 
-## 4. What is hoisting? How does it affect functions and variables?
-- https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/javascript/hoisting.md
+# 🌀 Event Loop — Microtasks vs Macrotasks
+
+## **Event Loop**
+JavaScript is single-threaded.  
+The **Event Loop** manages async operations by moving callbacks from task queues to the call stack once it’s empty — enabling non-blocking behavior.
 
 ---
 
-## 5. Explain closures with a practical example.
+## **Macrotasks**
+Larger async tasks queued for later execution.  
+**Examples:** `setTimeout`, `setInterval`, `setImmediate`, `I/O`, `requestAnimationFrame`.
 
-👉 **https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/javascript/7.closure.md**
+🕓 Executed **after all microtasks**.
+
+---
+
+## **Microtasks**
+High-priority async callbacks.  
+**Examples:** `Promise.then`, `Promise.catch`, `queueMicrotask`, `process.nextTick`.
+
+⚡ Executed **before macrotasks**, right after the current call stack clears.
+
+---
+
+## **Example**
+```javascript
+console.log("Start");
+setTimeout(() => console.log("Macrotask"), 0);
+Promise.resolve().then(() => console.log("Microtask"));
+console.log("End");
+
 
 
