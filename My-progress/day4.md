@@ -10,8 +10,8 @@
 ## 2. Coding Questions
 1. Custom myMap() Implementation in JavaScript. [Coding] [Easy] [JS]
   -  https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/Easy-level-JS-Questions/polyfill-map.md
-2. Reverse a string without using built-in reverse. [Coding] [Easy] [JS]
-  - https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/Easy-level-JS-Questions/Reverse.md
+2. Custom myFilter() Implementation in JavaScript. [Coding] [Easy] [JS]
+  - https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/Easy-level-JS-Questions/polyfill-filter.md
 
 ---
 
