@@ -8,8 +8,8 @@
 ---
 
 ## 2. Coding Questions
-1. Implement a function to check if two strings are anagrams. [Coding] [Easy] [JS]
-  -  https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/Easy-level-JS-Questions/Anagrams.md
+1. Custom myMap() Implementation in JavaScript. [Coding] [Easy] [JS]
+  -  https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/Easy-level-JS-Questions/polyfill-map.md
 2. Reverse a string without using built-in reverse. [Coding] [Easy] [JS]
   - https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/Easy-level-JS-Questions/Reverse.md
 
