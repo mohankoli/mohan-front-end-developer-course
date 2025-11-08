@@ -1,4 +1,4 @@
-# Day 1 (05-nov-2025) Notes
+# Day 1 (08-nov-2025) Notes
 
 ---
 
