@@ -19,6 +19,10 @@
 `this` refers to the **current context** — the object that is **executing** the function.  
 Its value depends on **how** the function is called, not on **where** it is defined.
 
+#### Call Apply and Bind
+
+https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/javascript/5.call-apply-bind.md
+
 # 🌀 Event Loop — Microtasks vs Macrotasks
 
 ## **Event Loop**
