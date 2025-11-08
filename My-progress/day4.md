@@ -3,7 +3,7 @@
 ---
 
 ## 1. System Design
-- [Modal Component Design](https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/System-design/Modal-Component-Design.md)
+- [Toast Component Design](https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/System-design/Toast.md)
 
 ---
 
