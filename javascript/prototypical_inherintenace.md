@@ -25,50 +25,44 @@ function Car(color) {
 const blueCar = new Car('blue');
 console.log(blueCar._color); // "blue"
 
-## 🧠 2.Example 
-function Car(color) {
-  this._color = color;
-}
-
-function ToyCar(color, price) {
-  Car.call(this, color); // Inherit color property from Car
-  this._price = price;
-}
-
 ## 🧠 3. Example
 ```js
+// Parent constructor
 function Car(color) {
   this._color = color;
 }
 
+// Add method to Car
 Car.prototype.getColor = function() {
   return this._color;
 };
 
+// Child constructor
 function ToyCar(color, price) {
-  Car.call(this, color); // Reuse Car's constructor logic
+  // Call Car to reuse its properties
+  Car.call(this, color);
   this._price = price;
 }
 
-// Inherit Car's prototype methods
+// Inherit methods from Car
 ToyCar.prototype = Object.create(Car.prototype);
 
-// Reset constructor reference
+// Fix constructor reference
 ToyCar.prototype.constructor = ToyCar;
 
+// Add method to ToyCar
 ToyCar.prototype.getPrice = function() {
   return this._price;
 };
 
+// Create an object
 const smallToy = new ToyCar('red', 500);
-console.log(smallToy.getColor()); // "red"
-console.log(smallToy.getPrice()); // 500
 
-
-const smallToy = new ToyCar('red', 500);
-console.log(smallToy._color); // "red"
-console.log(smallToy._price); // 500
-
+// Access inherited and own properties
+console.log(smallToy._color);      // "red"
+console.log(smallToy._price);      // 500
+console.log(smallToy.getColor());  // "red"
+console.log(smallToy.getPrice());  // 500
 
 
 
