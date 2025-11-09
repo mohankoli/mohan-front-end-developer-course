@@ -16,7 +16,7 @@
 ---
 
 ## 3. What are prototypes and prototypal inheritance? 
-- [Video Reference](https://www.youtube.com/watch?v=a0S1iG3TgP0&t=18s)
+- https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/javascript/prototypical_inherintenace.md
 
 ---
 
