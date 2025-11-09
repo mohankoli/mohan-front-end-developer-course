@@ -15,7 +15,7 @@
 
 ---
 
-## 3. `===` vs `==` in JavaScript
+## 3. What are prototypes and prototypal inheritance? 
 - [Video Reference](https://www.youtube.com/watch?v=a0S1iG3TgP0&t=18s)
 
 ---
