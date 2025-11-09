@@ -20,7 +20,23 @@
 
 ---
 
-## 4. `var` vs `let` vs `const` Difference
-- [Video Reference](https://www.youtube.com/watch?v=T4QOc53qRp4)
+## 4. higher order function
+- # 🧩 Higher Order Function in JavaScript
 
+## 🔹 Definition
+A **Higher Order Function (HOF)** is a function that **takes another function as an argument** or **returns a function** as its result.
+real Examples are map and reduce
 ---
+
+## 🧠 Example 1 — Function as Argument
+```js
+function multiplier(factor) {
+  return function(number) {
+    return number * factor;
+  };
+}
+
+const double = multiplier(2);
+console.log(double(5)); // 10
+
+
