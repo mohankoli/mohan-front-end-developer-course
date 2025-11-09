@@ -1,9 +1,9 @@
-# Day 1 (05-nov-2025) Notes
+# Day 1 (10-nov-2025) Notes
 
 ---
 
 ## 1. System Design
-- [Modal Component Design](https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/System-design/Modal-Component-Design.md)
+- 
 
 ---
 
