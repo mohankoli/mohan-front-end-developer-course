@@ -3,8 +3,7 @@
 ---
 
 ## 1. System Design
-- 
-https://github.com/mohankoli/mohan-front-end-developer-course/tree/main/System-design
+- https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/System-design/Date-Picker.md
 ---
 
 ## 2. Coding Questions
