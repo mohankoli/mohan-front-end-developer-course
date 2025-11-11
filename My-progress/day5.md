@@ -14,13 +14,26 @@
 
 ---
 
-## 3. `===` vs `==` in JavaScript
-- [Video Reference](https://www.youtube.com/watch?v=a0S1iG3TgP0&t=18s)
+## 3.# ✅ 11. Explain **Strict Mode** in JavaScript (with example in a single file)
+
+## ✅ What is Strict Mode?
+**Strict Mode** is a special mode in JavaScript that applies stricter rules, helps catch errors early, and prevents unsafe or confusing behaviors.  
+You enable it using `"use strict"` at the top of a file or inside a function.
 
 ---
 
-## 4. `var` vs `let` vs `const` Difference
-- [Video Reference](https://www.youtube.com/watch?v=T4QOc53qRp4)
+## ✅ Why Strict Mode?
+- Prevents accidental global variables  
+- Converts silent errors into actual errors  
+- Disallows duplicate function parameters  
+- `this` inside functions becomes `undefined` instead of `window`  
+- Prevents deleting variables or functions  
+- Helps JS engines optimize code  
+
+---
+
+## ✅ Single File Example (Strict Mode Enabled)
+
 
 ---
 
