@@ -15,23 +15,11 @@
 
 ---
 
-## 3. `===` vs `==` in JavaScript
-- [Video Reference](https://www.youtube.com/watch?v=a0S1iG3TgP0&t=18s)
+## 3. Debounce in JavaScript
+- https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/javascript/10.debounce.md
 
 ---
 
-## 4. `var` vs `let` vs `const` Difference
-- [Video Reference](https://www.youtube.com/watch?v=T4QOc53qRp4)
+## 5. Throttle in JavaScript?
 
----
-
-## 5. What is the Temporal Dead Zone (TDZ) in JavaScript?
-
-👉 The **Temporal Dead Zone** is the time between entering a block and when a `let` or `const` variable is declared, during which accessing the variable causes a **ReferenceError**.
-
-```js
-{
-  console.log(a); // ReferenceError
-  let a = 5;
-}
-
+-  https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/javascript/11.throttle.md
