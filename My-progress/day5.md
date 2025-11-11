@@ -32,15 +32,24 @@ You enable it using `"use strict"` at the top of a file or inside a function.
 
 ---
 
-## 5. What is the Temporal Dead Zone (TDZ) in JavaScript?
+## 5.# ✅ 12. What Are Arrow Functions? What Is Lexical `this`?
 
-👉 The **Temporal Dead Zone** is the time between entering a block and when a `let` or `const` variable is declared, during which accessing the variable causes a **ReferenceError**.
+## ✅ What Are Arrow Functions?
+**Arrow functions** are a shorter way to write functions in JavaScript.  
+They were introduced in ES6 to provide:
 
-```js
-{
-  console.log(a); // ReferenceError
-  let a = 5;
-}
+- Shorter syntax  
+- Lexical (inherited) `this`  
+- No own `arguments`, `super`, or `new.target`  
+- Cannot be used as constructors
+
+- Arrow functions are best for:
+- Callbacks
+- Array methods (map/filter)
+- Situations where you want to keep `this` from the outer scope
 
 
+### ✅ Example
+
+const add = (a, b) => a + b;
 
