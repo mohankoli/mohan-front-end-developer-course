@@ -32,11 +32,6 @@ You enable it using `"use strict"` at the top of a file or inside a function.
 
 ---
 
-## ✅ Single File Example (Strict Mode Enabled)
-
-
----
-
 ## 5. What is the Temporal Dead Zone (TDZ) in JavaScript?
 
 👉 The **Temporal Dead Zone** is the time between entering a block and when a `let` or `const` variable is declared, during which accessing the variable causes a **ReferenceError**.
