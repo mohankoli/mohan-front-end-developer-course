@@ -1,10 +1,10 @@
-# (10-nov-2025) Notes
+# (11-nov-2025) Notes
 
 ---
 
 ## 1. System Design
 - 
-
+https://github.com/mohankoli/mohan-front-end-developer-course/tree/main/System-design
 ---
 
 ## 2. Coding Questions
