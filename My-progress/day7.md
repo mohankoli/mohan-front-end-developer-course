@@ -11,7 +11,7 @@
 1. Remove duplicates from an array while preserving order. [Coding] [Easy] [JS]. [Coding] [Easy] [JS]
   -  https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/Easy-level-JS-Questions/removeDuplicate.md
 2. Merge two sorted arrays into a single sorted array. [Coding] [Easy] [JS]
-  - https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/Easy-level-JS-Questions/Reverse.md
+  - https://github.com/mohankoli/mohan-front-end-developer-course/blob/main/Easy-level-JS-Questions/mergeSortedArrays.md
 
 ---
 
