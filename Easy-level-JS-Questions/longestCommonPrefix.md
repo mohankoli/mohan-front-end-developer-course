@@ -1,4 +1,4 @@
-let longestCommonPrefix = (str) => {
+let longestCommonPrefix = (str) => { 
     if (!str.length) return '';
 
     // Sort the strings alphabetically
@@ -21,3 +21,4 @@ let longestCommonPrefix = (str) => {
 }
 
 console.log(longestCommonPrefix(["flaower", "flow", "flaight"]));
+
