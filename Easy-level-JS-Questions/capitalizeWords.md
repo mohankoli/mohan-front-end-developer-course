@@ -1,3 +1,7 @@
+#  capitalizeWords
+
+```javascript
+// Simple capitalizeWords program
 let capitalizeWords = (sentence) => {
     let words = sentence.split(' ');
     
@@ -9,4 +13,3 @@ let capitalizeWords = (sentence) => {
 }
 
 console.log(capitalizeWords("hello world this is react"));
-// Output: "Hello World This Is React"
