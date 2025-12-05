@@ -13,21 +13,20 @@ It supports:
 
 ```js
 function EventEmitter() {
-  const events = {};
-
-  return {
-    on(event, fn) {
-      (events[event] ||= []).push(fn);
-    },
-
-    off(event) {
-      events[event] = [];   // clear all listeners
-    },
-
-    emit(event, ...args) {
-      (events[event] || []).forEach(fn => fn(...args));
+    let events = {};
+    return {
+        on(event, fn) {
+            events[event] = events[event] ? events[event] : [];
+            events[event].push(fn);
+        },
+        off(event) {
+            events[event] = [];
+        },
+        emit(event, ...args) {
+             events[event] = events[event] ? events[event] : [];
+             events[event].forEach(fn => fn(...args));
+        }
     }
-  };
 }
 ```
 
