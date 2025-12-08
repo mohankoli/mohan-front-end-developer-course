@@ -23,7 +23,9 @@ const p3 = new Promise((res) =>
   setTimeout(() => res(30), 1000)
 );
 
-myPromiseAll([p1, p2, p3]).then(console.log);
+myPromiseAll([p1, p2, p3]).then(result => {
+  console.log(result);
+});
 ```
 
 
