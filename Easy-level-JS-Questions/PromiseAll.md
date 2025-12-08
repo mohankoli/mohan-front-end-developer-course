@@ -21,3 +21,4 @@ const p2 = Promise.resolve(20);
 const p3 = new Promise(res => setTimeout(() => res(30), 1000));
 
 myPromiseAll([p1, p2, p3]).then(console.log);
+
