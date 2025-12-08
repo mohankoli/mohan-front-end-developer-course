@@ -1,3 +1,4 @@
+```js
 function myPromiseAll(promises) {
   return new Promise((resolve) => {
     const output = [];
@@ -12,15 +13,18 @@ function myPromiseAll(promises) {
           resolve(output);
         }
       });
-    });});
+    });
+  });
 }
 
 const p1 = Promise.resolve(10);
 const p2 = Promise.resolve(20);
-const p3 = new Promise((res) => 
+const p3 = new Promise((res) =>
   setTimeout(() => res(30), 1000)
 );
 
 myPromiseAll([p1, p2, p3]).then(console.log);
+```
+
 
 
