@@ -12,8 +12,7 @@ function myPromiseAll(promises) {
           resolve(output);
         }
       });
-    });
-  });
+    });});
 }
 
 const p1 = Promise.resolve(10);
