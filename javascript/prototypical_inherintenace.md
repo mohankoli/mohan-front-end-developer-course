@@ -1,17 +1,22 @@
 # Function Constructor in JavaScript
 
 ## 🔹 Definition
-A function constructor is a normal function used with the `new` keyword to create objects.
+
+Every JavaScript object has a hidden parent object called `[[Prototype]]`.
 
 
 # 🧩 Function Constructor with Inheritance using Object.create()
 
 ## 🔹 Definition
-A **function constructor** is a normal function used with the `new` keyword to create objects.  
-Using **`Object.create()`**, we can make one constructor inherit another constructor’s prototype methods.
-
----
-
+## Prototype Chain
+```text
+child object
+   ↓
+prototype (parent)
+   ↓
+prototype of prototype
+   ↓
+null
 
 ---
 
@@ -27,42 +32,19 @@ console.log(blueCar._color); // "blue"
 
 ## 🧠 3. Example
 ```js
-// Parent constructor
-function Car(color) {
-  this._color = color;
+function Person(name) {
+  this.name = name;
 }
 
-// Add method to Car
-Car.prototype.getColor = function() {
-  return this._color;
+// Method stored on prototype
+Person.prototype.sayHello = function () {
+  console.log("Hello, " + this.name);
 };
 
-// Child constructor
-function ToyCar(color, price) {
-  // Call Car to reuse its properties
-  Car.call(this, color);
-  this._price = price;
-}
+const p1 = new Person("Mohan");
 
-// Inherit methods from Car
-ToyCar.prototype = Object.create(Car.prototype);
+p1.sayHello(); // method found via prototype
 
-// Fix constructor reference
-ToyCar.prototype.constructor = ToyCar;
-
-// Add method to ToyCar
-ToyCar.prototype.getPrice = function() {
-  return this._price;
-};
-
-// Create an object
-const smallToy = new ToyCar('red', 500);
-
-// Access inherited and own properties
-console.log(smallToy._color);      // "red"
-console.log(smallToy._price);      // 500
-console.log(smallToy.getColor());  // "red"
-console.log(smallToy.getPrice());  // 500
 
 
 
