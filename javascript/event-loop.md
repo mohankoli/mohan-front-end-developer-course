@@ -1,6 +1,15 @@
 # JavaScript Event Loop (Quick Guide)
 
 ## What is the Event Loop?
+JavaScript is single-threaded → it can do one thing at a time.
+
+So how does JS handle:
+
+setTimeout
+Promise
+API calls
+DOM events
+
 The **event loop** allows JavaScript (single-threaded) to handle asynchronous operations like timers, promises, and events.
 
 It decides **what runs next** when the call stack is empty.
