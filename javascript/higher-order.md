@@ -18,3 +18,17 @@ function sayHello() {
 }
 
 greet(sayHello); // Higher-order function
+
+Common Built-in Higher-Order Functions
+
+map()
+
+filter()
+
+reduce()
+
+forEach()
+
+setTimeout()
+
+addEventListener()
