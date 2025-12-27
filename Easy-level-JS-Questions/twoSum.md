@@ -21,3 +21,13 @@ let twoSum = (nums, target) => {
 }
 
 console.log(twoSum(nums, target)); // Output: [0, 2] because 2 + 11 = 13
+
+
+function twoSum(nums, target) {
+  for (let i = 0; i < nums.length; i++) {
+    const j = nums.indexOf(target - nums[i],i+1);
+    if (j !== -1) return [i, j];
+  }
+}
+
+console.log(twoSum([1,2,3,4,5,0,6,20], 26));
