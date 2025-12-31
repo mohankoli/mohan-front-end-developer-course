@@ -1,3 +1,4 @@
+// isRotation check
 const isRotation  = (st1,st2) => {
    if(st1.length !== st2.length) return false;
    let oneWord = st1+st1;
@@ -9,3 +10,4 @@ const isRotation  = (st1,st2) => {
 
 
 console.log(isRotation("abcd", "cdab"));
+
