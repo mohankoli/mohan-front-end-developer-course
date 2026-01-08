@@ -69,6 +69,42 @@ Use when:
 
 > Keep state **as close as possible** to where it is used.
 
+# 🌟 Local State vs Global State (React)
+
+## Simple & Interview-Friendly Decision Table
+
+| 🔍 Decision Criteria | 🧩 Local State (`useState`, `useReducer`) | 🌍 Global State (Context API, Redux) |
+|---------------------|------------------------------------------|--------------------------------------|
+| **Scope** | Single component or small tree | Multiple unrelated components |
+| **Sharing needed?** | ❌ No | ✅ Yes |
+| **State type** | UI state (forms, modals, toggles) | App-wide / business data |
+| **Complexity** | Simple to moderately complex | Medium to highly complex |
+| **Update frequency** | Low to medium | Medium to high |
+| **Logic handling** | `useState` (simple), `useReducer` (complex) | Context (simple), Redux (complex) |
+| **Prop drilling issue** | ❌ Not an issue | ✅ Avoided |
+| **Performance impact** | Minimal | Needs optimization |
+| **Debugging tools** | Basic | Advanced (Redux DevTools) |
+| **Scalability** | Limited | High |
+| **Best examples** | Input value, modal open/close | Auth, cart, theme, permissions |
+
+---
+
+## 🧠 Easy Memory Rule
+
+```
+UI-only → Local State  
+Shared → Global State  
+Simple → Context  
+Complex → Redux
+```
+
+---
+
+## 🎯 One-Line Interview Answer
+
+> I keep state as local as possible using `useState` or `useReducer`. When state needs to be shared across components, I use Context API for simple cases and Redux for complex, frequently changing global state.
+
+
 ---
 
 ## 3. Context API vs Redux — how do you decide?
