@@ -18,17 +18,32 @@
 ### Example
 
 ```js
-const initialState = { count: 0 };
+function Counter() {
+  const [state, dispatch] = React.useReducer(reducer, { count: 0 });
 
-function reducer(state, action) {
-  switch (action.type) {
-    case 'INC': return { count: state.count + 1 };
-    case 'DEC': return { count: state.count - 1 };
-    default: return state;
-  }
+  return (
+    <>
+      <h2>Count: {state.count}</h2>
+      <button onClick={() => dispatch({ type: "INCREMENT" })}>+</button>
+      <button onClick={() => dispatch({ type: "DECREMENT" })}>-</button>
+      <button onClick={() => dispatch({ type: "RESET" })}>Reset</button>
+    </>
+  );
 }
 
-const [state, dispatch] = useReducer(reducer, initialState);
+function Counter() {
+  const [state, dispatch] = React.useReducer(reducer, { count: 0 });
+
+  return (
+    <>
+      <h2>Count: {state.count}</h2>
+      <button onClick={() => dispatch({ type: "INCREMENT" })}>+</button>
+      <button onClick={() => dispatch({ type: "DECREMENT" })}>-</button>
+      <button onClick={() => dispatch({ type: "RESET" })}>Reset</button>
+    </>
+  );
+}
+
 ```
 
 ---
