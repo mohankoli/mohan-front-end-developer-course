@@ -90,6 +90,15 @@ Use when:
 * Small app → Context API
 * Large app with frequent updates → Redux
 
+  | Criteria         | Context API  | Redux        |
+| ---------------- | ------------ | ------------ |
+| App size         | Small–Medium | Medium–Large |
+| Update frequency | Low          | High         |
+| State complexity | Simple       | Complex      |
+| Debugging        | Limited      | Excellent    |
+| Boilerplate      | Low          | Moderate     |
+
+
 ---
 
 ## 4. How do you handle forms at scale in React?
