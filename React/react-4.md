@@ -90,13 +90,30 @@ Use when:
 * Small app → Context API
 * Large app with frequent updates → Redux
 
-  | Criteria         | Context API  | Redux        |
-| ---------------- | ------------ | ------------ |
-| App size         | Small–Medium | Medium–Large |
-| Update frequency | Low          | High         |
-| State complexity | Simple       | Complex      |
-| Debugging        | Limited      | Excellent    |
-| Boilerplate      | Low          | Moderate     |
+  # Context API vs Redux (Decision Matrix)
+
+| Criteria          | Context API                      | Redux                        |
+| ----------------- | -------------------------------- | ---------------------------- |
+| App size          | Small to Medium                  | Medium to Large              |
+| Update frequency  | Low                              | High                         |
+| State complexity  | Simple                           | Complex                      |
+| Debugging         | Limited                          | Excellent                    |
+| Boilerplate       | Low                              | Moderate                     |
+| Learning curve    | Easy                             | Steep                        |
+| Performance       | May cause unnecessary re-renders | Optimized with selectors     |
+| Async handling    | Manual handling                  | Built-in via middleware      |
+| DevTools support  | Minimal                          | Excellent (Redux DevTools)   |
+| Testing           | Simple but less structured       | Predictable and structured   |
+| Typical use cases | Theme, auth info, locale         | Cart, auth flows, dashboards |
+| Scalability       | Limited                          | High                         |
+
+---
+
+## Interview Summary
+
+Use **Context API** for simple, low-frequency global data.
+Use **Redux** for complex, frequently changing, business-critical state that needs scalability and debugging.
+
 
 
 ---
