@@ -38,4 +38,17 @@
   - Used mainly with **Express.js** for handling multipart/form-data.
   - Suitable for uploading files like **images, documents, and videos**.
 
-.
+- **What are Streams in Node.js**
+  - Streams are **objects** that allow reading or writing data **continuously**.
+  - Data is processed in **small chunks**, not all at once.
+  - This makes them **memory-efficient**, especially for **large data**.
+  - Common use cases:
+    - Reading large files
+    - Writing large files
+    - Handling file uploads/downloads
+  - Examples of streams:
+    - **Readable**
+    - **Writable**
+    - **Duplex**
+    - **Transform**
+
