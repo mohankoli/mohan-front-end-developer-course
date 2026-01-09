@@ -29,5 +29,13 @@
 | Example                   | `fs.readFileSync()`               | `fs.readFile()`                 |
 | Thread Behavior           | Runs in main thread and waits     | Runs task in background, main thread continues |
 
+- **What is the `package.json` file in Node.js**
+  - `package.json` is a **JSON file** that stores **information (metadata)** about a Node.js project.
+  - It contains the **project name and version**.
+  - Lists **dependencies and devDependencies** required by the project.
+  - Defines **scripts** to run commands like start, build, or test.
+  - Helps npm understand **how to install and run** the project.
+
+
 
 
