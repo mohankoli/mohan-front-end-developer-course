@@ -16,3 +16,21 @@
   - Session storage
   - User authentication tokens
   - Frequently used lookup data
+
+- **What is Clustering in Node.js**
+  - Clustering allows a Node.js app to use **multiple CPU cores**.
+  - Node.js normally runs on **a single core**.
+  - With clustering, the app creates **multiple worker processes**.
+  - Each worker handles **incoming requests**.
+  - This improves **performance and scalability**.
+
+- **Why Clustering is used**
+  - To handle **high traffic**.
+  - To better use **multi-core CPUs**.
+  - To avoid one process becoming a **bottleneck**.
+
+- **How Clustering works (Simple)**
+  - One **master process**
+  - Multiple **worker processes**
+  - Requests are distributed among workers
+
