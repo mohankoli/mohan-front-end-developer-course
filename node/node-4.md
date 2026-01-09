@@ -24,4 +24,21 @@
   - Optimize **database queries** by:
     - Creating proper **indexes**
     - Monitoring and improving **query performance**
+   
+- **What is a Template Engine**
+  - A template engine helps you **generate HTML dynamically**.
+  - It allows you to **embed data into HTML pages**.
+  - Instead of writing static HTML, you can pass **variables and logic** to templates.
+  - Commonly used in **Node.js with Express.js** to render views.
+
+- **Why Template Engines are used**
+  - Avoid repeating HTML code.
+  - Separate **business logic** from **UI (HTML)**.
+  - Make code **clean and maintainable**.
+
+- **Common Template Engines in Node.js**
+  - **EJS**
+  - **Pug**
+  - **Handlebars**
+
 
