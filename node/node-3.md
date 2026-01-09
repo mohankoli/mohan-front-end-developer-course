@@ -1,0 +1,15 @@
+- **How do you handle errors in Node.js**
+  - Errors in Node.js can be handled using **try/catch blocks**.
+  - **Error-first callbacks** are used where the first argument is an error object.
+  - **Promises** handle errors using the **`.catch()`** method.
+  - **async/await** handles errors using **try/catch** blocks.
+  - The **`util.promisify()`** utility converts callback-based functions into Promises for easier error handling.
+
+- **What is Express.js and why is it used**
+  - **Express.js** is a **web application framework** for Node.js.
+  - It simplifies building **APIs and web applications**.
+  - Used to handle:
+    - **HTTP requests and responses**
+    - **Routing**
+    - **Middleware**
+  - Helps **speed up development** and keeps code **clean and structured**.
