@@ -13,7 +13,7 @@
     - **Routing**
     - **Middleware**
   - Helps **speed up development** and keeps code **clean and structured**
-  -
+  
 - **What is middleware in Express.js**
   - Middleware is a **function** that runs **between the request and the response**.
   - It has access to:
