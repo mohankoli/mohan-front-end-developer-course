@@ -15,7 +15,7 @@
   - Helps improve **performance** and **scalability**.
   - Commonly used for handling **high traffic** applications.
 
- - **How can you make a Node.js application scalable**
+- **How can you make a Node.js application scalable**
   - Use **clustering** to run multiple instances on **different CPU cores**.
   - Implement a **load balancer** to distribute incoming requests.
   - Avoid **blocking operations** and use **non-blocking, asynchronous code**.
