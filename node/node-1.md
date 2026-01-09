@@ -4,6 +4,17 @@
   - Node.js is an **open-source**, **cross-platform** JavaScript runtime environment.
   - It executes **JavaScript code outside of a web browser**.
   - Built on the **V8 JavaScript engine**, which compiles JavaScript directly into **machine code**.
+ 
+- **Difference between `require()` and `import` in Node.js**
+
+| Feature              | `require()`                          | `import`                           |
+|----------------------|--------------------------------------|-----------------------------------|
+| Module Type          | CommonJS modules                     | ES6 modules                        |
+| Usage                | Loads modules at runtime             | Loads modules statically (compile-time) |
+| Transpiled Modules   | Not required                          | Can import modules transpiled to ES6 |
+| Syntax               | `const module = require('module')`   | `import module from 'module'`     |
+| Node.js Support      | Available in all versions             | Available in Node.js 12+ with `"type": "module"` in `package.json` |
+
 
 
 https://medium.com/@codingguy/top-30-node-js-interview-questions-one-stop-solution-d5cdd80b36ac
