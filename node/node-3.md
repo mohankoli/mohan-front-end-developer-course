@@ -26,4 +26,16 @@
     - **Log requests**
     - **Handle errors**
   - Calls **`next()`** to pass control to the next middleware.
+ 
+- **How do you handle file uploads in Node.js**
+  - File uploads are handled using **third-party packages**.
+  - Commonly used packages:
+    - **multer**
+    - **formidable**
+  - These packages:
+    - Read file data using **streams**
+    - Prevent loading the entire file into memory
+  - Used mainly with **Express.js** for handling multipart/form-data.
+  - Suitable for uploading files like **images, documents, and videos**.
+
 .
