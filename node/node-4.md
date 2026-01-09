@@ -25,20 +25,21 @@
     - Creating proper **indexes**
     - Monitoring and improving **query performance**
    
-- **What is a Template Engine**
-  - A template engine helps you **generate HTML dynamically**.
-  - It allows you to **embed data into HTML pages**.
-  - Instead of writing static HTML, you can pass **variables and logic** to templates.
-  - Commonly used in **Node.js with Express.js** to render views.
+- **Are Template Engines Server-Side Rendering (SSR)?**
+  - Yes, template engines perform **Server-Side Rendering (SSR)**.
+  - HTML is **generated on the server** using data.
+  - The final HTML is **sent to the browser**.
+  - The browser displays the page **without extra JavaScript rendering**.
 
-- **Why Template Engines are used**
-  - Avoid repeating HTML code.
-  - Separate **business logic** from **UI (HTML)**.
-  - Make code **clean and maintainable**.
+- **Template Engine Flow (SSR)**
+  - Request comes to server
+  - Server fetches data
+  - Template engine creates HTML
+  - HTML is sent to client
 
-- **Common Template Engines in Node.js**
-  - **EJS**
-  - **Pug**
-  - **Handlebars**
+- **Examples**
+  - Express + **EJS**
+  - Express + **Pug**
+  - Express + **Handlebars**
 
 
