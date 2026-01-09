@@ -33,4 +33,24 @@
   - One **master process**
   - Multiple **worker processes**
   - Requests are distributed among workers
+- **What is a Load Balancer (Nginx) with Node.js**
+  - A **load balancer** distributes incoming requests across **multiple Node.js servers**.
+  - **Nginx** is commonly used as a **load balancer**.
+  - It sits **in front of Node.js applications**.
+  - Prevents one server from getting **overloaded**.
+  - Improves **performance, reliability, and scalability**.
+
+- **Why use Nginx with Node.js**
+  - Handles **high traffic** efficiently.
+  - Provides **failover** if one Node.js instance goes down.
+  - Improves **response time**.
+  - Can also handle:
+    - **SSL termination**
+    - **Static files**
+    - **Reverse proxying**
+
+- **Simple request flow**
+  ```text
+  Client → Nginx (Load Balancer) → Node.js App 1 / App 2 / App 3
+
 
