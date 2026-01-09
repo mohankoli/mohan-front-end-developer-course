@@ -10,3 +10,13 @@
   - Callbacks allow Node.js to **perform tasks without blocking** the main thread.
   - Commonly used for tasks like **reading files, network requests, or database operations**.
 
+- **What is the use of `process` object in Node.js**
+  - The **`process` object** provides information about the **current Node.js process**.
+  - Allows operations such as:
+    - **Exiting** the process (`process.exit()`).
+    - **Sending signals** to the process (`process.kill()`).
+    - Accessing **environment variables** (`process.env`).
+    - Communicating with the **parent process**.
+  - Useful for **monitoring and controlling** the running Node.js application.
+
+
