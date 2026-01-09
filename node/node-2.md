@@ -18,5 +18,16 @@
     - Accessing **environment variables** (`process.env`).
     - Communicating with the **parent process**.
   - Useful for **monitoring and controlling** the running Node.js application.
+ 
+- **Difference between Synchronous and Asynchronous Functions in Node.js**
+
+| Feature                  | Synchronous Functions              | Asynchronous Functions           |
+|---------------------------|----------------------------------|---------------------------------|
+| Execution                 | Blocks code until task finishes   | Does not block code             |
+| Callback                  | Not needed                        | Uses callback, Promise, or async/await |
+| Speed                     | Slower for I/O tasks              | Faster for I/O tasks            |
+| Example                   | `fs.readFileSync()`               | `fs.readFile()`                 |
+| Thread Behavior           | Runs in main thread and waits     | Runs task in background, main thread continues |
+
 
 
