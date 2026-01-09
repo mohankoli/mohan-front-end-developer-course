@@ -22,6 +22,12 @@
   - The Event Loop is a mechanism that allows Node.js to perform **non-blocking I/O operations**.
   - It checks for any **pending tasks in the event queue** and processes them **one by one** in a **single thread**.
   - This makes Node.js **highly scalable**.
+ 
+- - **What are Promises in Node.js**
+  - Promises are **objects** that ensure an **asynchronous operation** completes successfully.
+  - They are an **alternative to callbacks** for handling asynchronous tasks.
+  - Promises work by **chaining `.then()`** for success and **`.catch()`** for errors.
+
 
 
 
