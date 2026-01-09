@@ -14,3 +14,14 @@
   - Each worker runs on a **separate CPU core**.
   - Helps improve **performance** and **scalability**.
   - Commonly used for handling **high traffic** applications.
+
+ - **How can you make a Node.js application scalable**
+  - Use **clustering** to run multiple instances on **different CPU cores**.
+  - Implement a **load balancer** to distribute incoming requests.
+  - Avoid **blocking operations** and use **non-blocking, asynchronous code**.
+  - Optimize code by using **efficient algorithms**.
+  - Use **caching** (Redis, in-memory cache) to reduce database calls.
+  - Optimize **database queries** by:
+    - Creating proper **indexes**
+    - Monitoring and improving **query performance**
+
