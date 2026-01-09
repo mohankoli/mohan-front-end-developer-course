@@ -12,4 +12,18 @@
     - **HTTP requests and responses**
     - **Routing**
     - **Middleware**
-  - Helps **speed up development** and keeps code **clean and structured**.
+  - Helps **speed up development** and keeps code **clean and structured**
+  -
+- **What is middleware in Express.js**
+  - Middleware is a **function** that runs **between the request and the response**.
+  - It has access to:
+    - **Request object (`req`)**
+    - **Response object (`res`)**
+    - **Next function (`next`)**
+  - Middleware can:
+    - **Modify request or response**
+    - **Handle authentication**
+    - **Log requests**
+    - **Handle errors**
+  - Calls **`next()`** to pass control to the next middleware.
+.
