@@ -1,0 +1,4 @@
+- **How does Node.js handle asynchronous operations**
+  - Node.js uses **callback functions**, **Promises**, and **async/await** to handle asynchronous tasks.
+  - These mechanisms allow Node.js to **continue running other code** while waiting for the asynchronous operation to finish.
+  - This makes Node.js **non-blocking** and **efficient** for handling many tasks at the same time.
