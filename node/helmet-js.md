@@ -41,6 +41,7 @@ app.use(cors({ origin: ["https://app.com"], credentials: true }));
 ---
 
 ## 4. CSP (Content Security Policy)
+CSP controls what resources (like scripts, images, styles) the browser is allowed to load, so harmful scripts can’t run.
 Prevents XSS by restricting which scripts/styles/images/fonts can load.
 
 Key example:
