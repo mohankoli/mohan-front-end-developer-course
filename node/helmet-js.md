@@ -30,7 +30,7 @@ app.use(rateLimit({ windowMs: 15*60*1000, max: 200 }));
 ---
 
 ## 3. CORS (Cross-Origin Resource Sharing)
-Controls which origins are allowed to make browser-based requests.
+CORS controls which origins (websites/domains) are allowed to send requests to your server from the browser.
 NOT a security measure against XSS/CSRF, but prevents unauthorized browser fetch.
 
 ```js
