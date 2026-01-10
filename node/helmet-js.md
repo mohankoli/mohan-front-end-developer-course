@@ -1,7 +1,8 @@
 # Node.js Security — Interview Notes
 
 ## 1. Helmet.js
-Helmet sets secure HTTP headers to reduce attack surface.
+Helmet.js is an Express middleware that sets secure HTTP headers to protect web applications from common web vulnerabilities like XSS, clickjacking, MIME sniffing, and other header-based attacks.
+
 Protects against:
 - Clickjacking
 - MIME sniffing
