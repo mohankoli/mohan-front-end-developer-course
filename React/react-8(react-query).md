@@ -1,5 +1,7 @@
 # React Query (TanStack Query) — Short Interview Notes
 
+React Query is useful for caching server API calls on the client side, which helps optimize and reduce unnecessary API requests.
+
 ## 1. What Problem Does It Solve?
 React Query manages **server state**, which is:
 - async
