@@ -17,10 +17,10 @@ app.use(helmet());
 ---
 
 ## 2. Rate Limiting
-Restricts request count per IP to prevent:
-- Brute-force attacks
-- API abuse
-- DDoS spikes
+Limits how many requests a user/IP can send within a certain time.
+- too many login attempts (brute force)
+- heavy usage (API misuse)
+- traffic overload (DDoS spikes)
 
 ```js
 import rateLimit from "express-rate-limit";
