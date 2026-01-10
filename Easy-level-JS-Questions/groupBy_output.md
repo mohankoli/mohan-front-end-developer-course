@@ -20,6 +20,16 @@ function groupBy(arr, key){
     return res;
 }
 
+const groupByDepartment = (arr) => {
+  const grouped = {};
+  for (let item of arr) {
+    grouped[item.department] = grouped[item.department] || [];
+    grouped[item.department].push(item);
+  }
+  return grouped;
+};
+
+
 console.log(groupBy(employees,'department'))
 ```
 
