@@ -6,8 +6,9 @@
 
 Different components require different versions:
 
--   Node.js API needs **Node 13**
--   Background service needs **Node 18**
+-   Node.js  payment API needs **Node 13**
+-   Auth service needs **Node 18**
+-   notification service need python
 -   Redis needs **specific Redis version**
 -   OS is **Linux**
 -   Developers may use Windows/Mac
