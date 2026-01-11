@@ -1,65 +1,33 @@
-
-Node API returns fast; heavy work happens in worker.
+# Node.js With Message Queues – Interview Notes
 
 ---
 
-## ❓ 4. Popular queues for Node.js
+## ❓ 1. Why do we use Message Queues?
 
-| Queue | Best for |
+Message queues help in:
+- Decoupling services
+- Async/background processing
+- Handling traffic spikes
+- Retry & failure isolation
+- Load leveling (backpressure)
+- Scaling workers independently
+
+---
+
+## ❓ 2. Common real-world uses of queues
+
+| Use Case | Queue Example |
 |---|---|
-| Redis + BullMQ | job queues + retries |
-| RabbitMQ | routing + pub/sub |
-| Kafka | high throughput event streaming |
-| AWS SQS | cloud managed queue |
-| NATS | low-latency messaging |
-| MQTT | IoT devices |
+| Email sending | Redis / RabbitMQ |
+| Payment processing | Kafka / SQS |
+| Webhooks | SQS |
+| Video/image processing | BullMQ |
+| Analytics pipelines | Kafka |
+| Notification fan-out | Redis Pub/Sub |
+| IoT messaging | MQTT |
+| Inventory sync | Kafka |
 
 ---
 
-## ❓ 5. Pull vs Push based message consumption
+## ❓ 3. High-level architecture
 
-- **Push** → Broker pushes message to consumer  
-  Example: RabbitMQ
-
-- **Pull** → Consumer fetches messages  
-  Example: Kafka
-
----
-
-## ❓ 6. What is ACK in message queues?
-
-ACK = acknowledgment that message was processed.
-
-If consumer fails before ACK → message is redelivered.
-
----
-
-## ❓ 7. Delivery semantics
-
-| Mode | Meaning |
-|---|---|
-| At-most-once | no retries |
-| At-least-once | retries → duplicates possible |
-| Exactly-once | no loss + no duplicates (complex) |
-
-Defaults:
-- Kafka → `at-least-once`
-- RabbitMQ → `at-most-once` unless ACK enabled
-
----
-
-## ❓ 8. What is Dead Letter Queue (DLQ)?
-
-DLQ stores messages that failed after max retries.
-Good for auditing + debugging failures.
-
----
-
-## ❓ 9. Retry mechanisms
-
-Typically include:
-- retry with delay (backoff)
-- retry limit
-- DLQ fallback
-
-Example backoff:
