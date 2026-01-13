@@ -29,3 +29,11 @@ let binarySearch = (arr, target) => {
             left = mid + 1;
         } else {
             right = mid - 1;
+        }
+    }
+    return -1;
+};
+
+let nums = [1,2,3,4,5,6,7,8,9,10];
+console.log(binarySearch(nums, 7)); // Output: 6
+
