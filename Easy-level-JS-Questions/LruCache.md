@@ -1,3 +1,6 @@
+# LRU Cache (Array-Based) — JavaScript
+
+```js
 class LruCache {
     constructor(capacity) {
         this.capacity = capacity;
@@ -47,3 +50,5 @@ console.log(lru.cache); // [2, 3, 1]
 
 lru.setItem(4);
 console.log(lru.cache); // [4, 2, 3] → 1 evicted (LRU)
+```
+
