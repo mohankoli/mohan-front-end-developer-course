@@ -204,7 +204,7 @@ export default React.memo(Button);
 
 ---
 
-## 28. React Fiber Architecture
+## 10. React Fiber Architecture
 
 - Reconciliation engine introduced in React 16+.
 - Breaks rendering work into small units.
