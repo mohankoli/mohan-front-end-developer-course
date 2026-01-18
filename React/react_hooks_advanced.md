@@ -40,9 +40,13 @@ useEffect(() => {
 
 ## 20. `useReducer` Hook
 
-- Manages more complex state logic.
-- Reducer decides state transitions based on actions.
-- Similar pattern to Redux.
+- Used when component state logic becomes more complex.
+- Uses a reducer function that decides how state should change.
+- State changes happen through actions (like commands).
+- Similar concept to Redux (state + action + reducer).
+- Good when next state depends on previous state.
+- Helpful for forms, counters, and multi-step workflows.
+- Returns current state and a `dispatch` function to update it.
 
 **Example:**
 ```jsx
