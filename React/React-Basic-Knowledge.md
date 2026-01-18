@@ -94,8 +94,6 @@ condition ? <A/> : <B/>
 ```
 
 ## 10. How to apply styles in React?
-Methods:
-## 10. How to apply styles in React?
 
 React supports multiple styling approaches:
 
