@@ -56,7 +56,10 @@ Props = external & read-only, State = internal & mutable.
 - Smart (Container): manages data, state, async ops
 
 ## 7. What is a key in index map?
-Keys help React identify items in lists for reconciliation.
+- A **key** is a unique identifier for list items rendered using `.map()` in React, helping React track which item changed, got added, or removed.
+- Keys improve rendering performance and reconciliation by preventing unnecessary re-renders.
+- Preferred keys come from unique fields like `id` or `uuid`; using `index` is only recommended for static lists.
+- Incorrect or unstable keys can cause UI bugs, such as incorrect item updates or preserved state in wrong elements.
 
 ```jsx
 items.map(item => <li key={item.id}>{item.name}</li>)
