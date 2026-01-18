@@ -265,8 +265,11 @@ ReactDOM.createPortal(<Modal />, document.getElementById('portal-root'));
 
 ## 31. `React.lazy` & `Suspense`
 
-- Provides code splitting and lazy loading.
-- Improves performance by loading components when needed.
+- `React.lazy` loads a component only when it is needed.
+- `Suspense` shows a fallback (like a loader) while waiting.
+- Helps reduce the initial bundle size of the app.
+- Improves performance and page load time, especially in SPAs.
+- Good for large pages, routes, dashboards, or rarely visited screens.
 
 **Example:**
 ```jsx
