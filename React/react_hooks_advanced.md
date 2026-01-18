@@ -84,9 +84,20 @@ const inputRef = useRef();
 
 ## 22. `useCallback` Hook
 
-- Memoizes callback functions.
-- Prevents function recreation on every render.
-- Optimizes child components wrapped in `React.memo`.
+-- `useCallback` memoizes (remembers) a function between renders.
+- It prevents the function from being recreated on every re-render.
+- Useful when passing functions to child components that use `React.memo`.
+- Helps avoid unnecessary re-renders in child components.
+- Takes a dependency array to decide when to recreate the function.
+- Returns the same function reference until dependencies change.
+- Mainly used for performance optimization in large component trees.
+- Good for event handlers (click, input, submit) passed down as props.
+
+when to use it
+- When passing functions to memoized children
+- When avoiding unnecessary re-renders
+- When optimizing performance in large lists or trees
+
 
 **Example:**
 ```jsx
