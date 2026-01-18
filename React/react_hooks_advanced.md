@@ -206,9 +206,14 @@ export default React.memo(Button);
 
 ## 10. React Fiber Architecture
 
-- Reconciliation engine introduced in React 16+.
-- Breaks rendering work into small units.
-- Enables scheduling, prioritization, pausing.
+React Fiber is a reimplementation of React’s reconciliation algorithm.
+It allows React to:
+- break rendering work into small units
+- pause and resume work
+- prioritize updates (high vs low priority)
+- improve responsiveness for complex UIs
+
+Fiber enables concurrency by making rendering interruptible.
 
 **Benefits:**
 - smoother UI updates
