@@ -82,7 +82,11 @@ Avoid index as key unless list is static.
 ```
 
 ## 9. What is conditional rendering?
-Rendering different UI based on conditions:
+- Conditional rendering means showing different UI based on certain conditions or state.
+- It allows React components to render specific elements only when a condition is true.
+- Commonly used for scenarios like loading states, authentication, feature toggles, and empty states.
+- It is implemented using JS logic such as `&&`, ternary (`? :`), and `if` statements inside JSX.
+
 
 ```jsx
 condition && <A/>
@@ -91,12 +95,17 @@ condition ? <A/> : <B/>
 
 ## 10. How to apply styles in React?
 Methods:
-- Inline styles
-- CSS files
-- CSS Modules
-- Styled-components
-- TailwindCSS
-- UI libraries
+## 10. How to apply styles in React?
+
+React supports multiple styling approaches:
+
+- **Inline Styles** — Styles defined directly inside JSX using style objects. Good for dynamic styles but limited (no pseudo selectors).
+- **CSS Files** — Traditional `.css` imported into components. Simple and widely used for global or scoped styles.
+- **CSS Modules** — Locally scoped CSS feature (`.module.css`) avoiding class name collisions; better for scaling apps.
+- **Styled-Components (CSS-in-JS)** — Styles written as components with support for props, theming, and dynamic styling.
+- **TailwindCSS** — Utility-first CSS framework helping quickly build UI using predefined classes; good for consistency and speed.
+- **UI Libraries** (e.g., MUI, AntD, Chakra) — Provide pre-styled components for faster development and consistent design systems.
+
 
 ## 11. Parent-child communication?
 React uses unidirectional data flow.
