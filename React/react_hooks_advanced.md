@@ -123,12 +123,27 @@ const total = useMemo(() => items.reduce((a, b) => a + b, 0), [items]);
 ```
 
 ---
+## 7. Custom Hooks
 
-## 24. Custom Hooks vs `useEffect`
+- Custom hooks encapsulate reusable logic into functions.
+- They help avoid duplicating `useEffect` or state logic across components.
+- They make code cleaner, more readable, and easier to maintain.
+- Custom hooks always start with the word `use`.
 
-- Custom hooks encapsulate reusable logic.
-- Shared logic avoids duplicated effects.
-- Helps maintain cleaner component code.
+**Example: `useFetch` Custom Hook**
+```jsx
+function useFetch(url) {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    fetch(url)
+      .then(res => res.json())
+      .then(json => setData(json));
+  }, [url]);
+
+  return data;
+}
+
 
 ---
 
