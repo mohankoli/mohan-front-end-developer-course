@@ -68,7 +68,11 @@ items.map(item => <li key={item.id}>{item.name}</li>)
 Avoid index as key unless list is static.
 
 ## 8. What is React.Fragment?
-Lets you group children without extra DOM wrappers:
+- `React.Fragment` lets you group multiple elements without adding extra DOM nodes.
+- It avoids unnecessary wrapper elements like `<div>` which can break styling or layouts.
+- It is useful when returning multiple children from a component.
+- It can be written as `<React.Fragment>` or the shorthand `<>...</>`.
+
 
 ```jsx
 <>
