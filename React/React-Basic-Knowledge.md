@@ -1,6 +1,6 @@
 # React Basic Knowledge
 
-## --- What is this section about?
+## --- What is this section about?---
 This section covers foundational React concepts like JSX, Virtual DOM, components, props, state, rendering logic, child-parent communication, and styling. These concepts form the base of understanding how React builds UI and manages data flow.
 
 ## 7. What is Virtual DOM?
