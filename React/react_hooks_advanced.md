@@ -263,7 +263,7 @@ ReactDOM.createPortal(<Modal />, document.getElementById('portal-root'));
 
 ---
 
-## 31. `React.lazy` & `Suspense`
+## 13. `React.lazy` & `Suspense`
 
 - `React.lazy` loads a component only when it is needed.
 - `Suspense` shows a fallback (like a loader) while waiting.
