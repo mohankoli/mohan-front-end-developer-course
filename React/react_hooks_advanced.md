@@ -185,11 +185,17 @@ function App() {
 
 ---
 
-## 27. `React.memo`
+## 9. `React.memo`
+React.memo is a higher-order component that memoizes a component → Prevents re-render if props don’t change
 
-- Prevents unnecessary re-renders.
+- `React.memo` prevents unnecessary re-renders.
 - Works for pure functional components.
-- Compares previous props to next props.
+- Compares previous props to next props and re-renders only if changed.
+- Useful when component receives the same props repeatedly.
+- Use it when child renders are expensive (lists, tables, charts).
+- Use it when passing functions via props along with `useCallback`.
+- Avoid if props change often (no performance gain).
+
 
 **Example:**
 ```jsx
