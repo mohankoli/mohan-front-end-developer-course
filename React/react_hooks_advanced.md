@@ -284,8 +284,10 @@ const Dashboard = React.lazy(() => import('./Dashboard'));
 
 ## 32. `useImperativeHandle` Hook
 
-- Controls values exposed via `ref` to parent.
-- Used with `forwardRef`.
+- It allows a child component to decide what functions or values the parent can access through a ref.
+- It gives the child control over what is exposed to the parent.
+- It is used together with `forwardRef`.
+- Parent can call functions on the child (imperative style).
 
 ---
 
