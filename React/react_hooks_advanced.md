@@ -84,7 +84,7 @@ const inputRef = useRef();
 
 ## 5. `useCallback` Hook
 
--- `useCallback` memoizes (remembers) a function between renders.
+- `useCallback` memoizes (remembers) a function between renders.
 - It prevents the function from being recreated on every re-render.
 - Useful when passing functions to child components that use `React.memo`.
 - Helps avoid unnecessary re-renders in child components.
