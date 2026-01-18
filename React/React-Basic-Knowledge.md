@@ -29,7 +29,7 @@ React.createElement('h1', null, 'Hello React');
 ## 3. Why className and not class?
 `class` is a reserved keyword in JavaScript. React uses `className` to avoid conflicts.
 
-## 10. What are functional components and props?
+## 4. What are functional components and props?
 Functional components are simple JS functions returning JSX and receive inputs via props.
 
 Example:
@@ -39,7 +39,7 @@ function Button({ label }) {
 }
 ```
 
-## 11. What are class components, props and state?
+## 5. What are class components, props and state?
 Before hooks, class components held state and lifecycle:
 
 ```jsx
@@ -51,11 +51,11 @@ class Counter extends React.Component {
 
 Props = external & read-only, State = internal & mutable.
 
-## 12. Dumb vs Smart Components
+## 6. Dumb vs Smart Components
 - Dumb (Presentational): UI only, no state
 - Smart (Container): manages data, state, async ops
 
-## 13. What is a key in index map?
+## 7. What is a key in index map?
 Keys help React identify items in lists for reconciliation.
 
 ```jsx
@@ -64,7 +64,7 @@ items.map(item => <li key={item.id}>{item.name}</li>)
 
 Avoid index as key unless list is static.
 
-## 14. What is React.Fragment?
+## 8. What is React.Fragment?
 Lets you group children without extra DOM wrappers:
 
 ```jsx
@@ -74,7 +74,7 @@ Lets you group children without extra DOM wrappers:
 </>
 ```
 
-## 15. What is conditional rendering?
+## 9. What is conditional rendering?
 Rendering different UI based on conditions:
 
 ```jsx
@@ -82,7 +82,7 @@ condition && <A/>
 condition ? <A/> : <B/>
 ```
 
-## 16. How to apply styles in React?
+## 10. How to apply styles in React?
 Methods:
 - Inline styles
 - CSS files
@@ -91,7 +91,7 @@ Methods:
 - TailwindCSS
 - UI libraries
 
-## 17. Parent-child communication?
+## 11. Parent-child communication?
 React uses unidirectional data flow.
 
 Parent → Child via props  
