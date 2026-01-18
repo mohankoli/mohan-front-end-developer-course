@@ -222,11 +222,29 @@ Fiber enables concurrency by making rendering interruptible.
 
 ---
 
-## 29. How React Router Works
+## 11. How React Router Works
 
-- Implements client-side routing.
-- Uses History API instead of page reloads.
-- Maps URL → Component declaratively.
+- React Router enables **client-side routing** in a Single Page Application (SPA).
+- It maps URLs to components without doing a full page reload.
+- Uses the browser History API (`pushState`, `replaceState`) to update the URL.
+- React switches components in memory, keeping the UI fast and seamless.
+- Helps maintain deep linking, navigation, and browser back/forward support.
+
+**Example:**
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/users" element={<Users />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+```
 
 ---
 
