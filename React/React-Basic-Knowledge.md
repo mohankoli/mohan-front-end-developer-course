@@ -13,7 +13,7 @@ Benefits:
 - enhances performance
 - enables declarative UI
 
-## 8. What is JSX?
+## 2. What is JSX?
 JSX means writing HTML inside JavaScript. JSX (JavaScript XML) allows writing UI in JavaScript using HTML-like syntax.
 
 Example:
@@ -26,7 +26,7 @@ JSX compiles to:
 React.createElement('h1', null, 'Hello React');
 ```
 
-## 9. Why className and not class?
+## 3. Why className and not class?
 `class` is a reserved keyword in JavaScript. React uses `className` to avoid conflicts.
 
 ## 10. What are functional components and props?
