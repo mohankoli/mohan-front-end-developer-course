@@ -18,7 +18,7 @@ const [count, setCount] = useState(0);
 
 ## 19. `useEffect` Hook
 
-- Runs side effects after render.
+- useEffect handle side effects.
 - Used for fetching data, timers, subscriptions.
 - Supports cleanup to avoid memory leaks.
 - Dependency array controls execution frequency.
