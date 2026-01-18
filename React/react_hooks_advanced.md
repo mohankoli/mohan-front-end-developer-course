@@ -231,6 +231,7 @@ Fiber enables concurrency by making rendering interruptible.
 - Helps maintain deep linking, navigation, and browser back/forward support.
 
 **Example:**
+```jsx
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -245,6 +246,8 @@ function App() {
   );
 }
 ```
+
+
 
 ---
 
