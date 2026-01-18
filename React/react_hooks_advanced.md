@@ -16,12 +16,17 @@ const [count, setCount] = useState(0);
 
 ---
 
-## 19. `useEffect` Hook
+## 2. `useEffect` Hook
 
 - useEffect handle side effects.
 - Used for fetching data, timers, subscriptions.
 - Supports cleanup to avoid memory leaks.
 - Dependency array controls execution frequency.
+  -  No dependency array → `useEffect` runs after every render.
+  - Empty dependency array `[]` → runs only once on mount (on page load).
+  - Dependency array with values `[x]` → runs only when `x` changes.
+  - Multiple dependencies `[x, y]` → runs when `x` or `y` changes.
+
 
 **Example:**
 ```jsx
