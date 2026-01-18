@@ -3,7 +3,7 @@
 ## --- What is this section about?---
 This section covers foundational React concepts like JSX, Virtual DOM, components, props, state, rendering logic, child-parent communication, and styling. These concepts form the base of understanding how React builds UI and manages data flow.
 
-## 7. What is Virtual DOM?
+## 1. What is Virtual DOM?
 Virtual DOM (VDOM) is an in-memory lightweight representation of the actual browser DOM. React updates the Virtual DOM first, computes a diff, and then applies only the necessary changes to the real DOM using a reconciliation algorithm. 
 
 Flow: State Change → Virtual DOM Render → Diff → Patch Real DOM
