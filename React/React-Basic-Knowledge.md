@@ -106,6 +106,13 @@ React supports multiple styling approaches:
 
 
 ## 11. Parent-child communication?
+
+- React uses **unidirectional (one-way) data flow**, meaning data always flows from parent to child.
+- **Parent → Child:** done using `props` to pass data or configuration down the tree.
+- **Child → Parent:** done using callback functions passed from the parent, allowing the child to trigger updates or send values back.
+- This pattern makes data flow predictable, easier to debug, and helps maintain component state ownership.
+
+
 React uses unidirectional data flow.
 
 Parent → Child via props  
