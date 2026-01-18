@@ -103,3 +103,18 @@ function Parent() {
   return <Child onEvent={onChild}/>
 }
 ```
+---
+
+## 2. Difference between Functional and Class Components
+
+### (Why hooks replaced classes?)
+
+| Feature           | Class Component  | Functional Component |
+| ----------------- | ---------------- | -------------------- |
+| Syntax            | ES6 Classes      | JavaScript Functions |
+| State             | `this.state`     | `useState`           |
+| Lifecycle methods | Yes              | Via Hooks            |
+| `this` keyword    | Required         | Not required         |
+| Code size         | More boilerplate | Cleaner & shorter    |
+| Reusability       | Limited          | High (custom hooks)  |
+| Performance       | Slightly heavier | Lightweight          |
