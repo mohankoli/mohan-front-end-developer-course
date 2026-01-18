@@ -126,7 +126,7 @@ function Parent() {
 ```
 ---
 
-## 2. Difference between Functional and Class Components
+## 12. Difference between Functional and Class Components
 
 ### (Why hooks replaced classes?)
 
