@@ -3,10 +3,10 @@
 ---
 
 ## 1. `useState` Hook
-
+State is data that can change over time in a component.
 - Allows functional components to maintain internal state.
 - Returns a state value + setter function.
-- Triggers re-render when setter is called.
+- when state changes components re-renders
 
 **Example:**
 ```jsx
