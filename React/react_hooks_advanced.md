@@ -108,7 +108,7 @@ const handleClick = useCallback(() => {
 
 ---
 
-## 23. `useMemo` Hook
+## 6. `useMemo` Hook
 
 - `useMemo` memoizes expensive computed values.
 - It avoids recalculating those values on every render.
