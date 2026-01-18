@@ -251,7 +251,7 @@ function App() {
 
 ---
 
-## 30. React Portal
+## 12. React Portal
 
 - Renders components outside the DOM hierarchy.
 - Useful for modals, tooltips, overlays.
