@@ -310,7 +310,7 @@ const withLogger = Component => props => {
 
 ---
 
-## 34. Why React Re-renders
+## 16. Why React Re-renders
 
 - State change
 - Prop change
@@ -319,7 +319,7 @@ const withLogger = Component => props => {
 
 ---
 
-## 35. Force Re-render Without `setState`
+## 17. Force Re-render Without `setState`
 
 **Example:**
 ```jsx
@@ -328,7 +328,7 @@ const [, forceUpdate] = useReducer(x => x + 1, 0);
 
 ---
 
-## 36. Server-Side Rendering (SSR)
+## 18. Server-Side Rendering (SSR)
 
 - HTML is rendered on server before sent to browser.
 - Helps SEO + improves performance.
