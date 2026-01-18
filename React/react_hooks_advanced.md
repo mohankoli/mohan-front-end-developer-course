@@ -2,7 +2,7 @@
 
 ---
 
-## 18. `useState` Hook
+## 1. `useState` Hook
 
 - Allows functional components to maintain internal state.
 - Returns a state value + setter function.
