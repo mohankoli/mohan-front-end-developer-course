@@ -14,7 +14,7 @@ Benefits:
 - enables declarative UI
 
 ## 8. What is JSX?
-JSX (JavaScript XML) allows writing UI in JavaScript using HTML-like syntax.
+JSX means writing HTML inside JavaScript. JSX (JavaScript XML) allows writing UI in JavaScript using HTML-like syntax.
 
 Example:
 ```jsx
