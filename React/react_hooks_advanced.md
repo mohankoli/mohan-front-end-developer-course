@@ -110,8 +110,12 @@ const handleClick = useCallback(() => {
 
 ## 23. `useMemo` Hook
 
-- Memoizes expensive computed values.
-- Avoids recalculating on every render.
+- `useMemo` memoizes expensive computed values.
+- It avoids recalculating those values on every render.
+- Use it when a calculation is heavy or depends on large data.
+- Use it if recalculation would hurt performance.
+- Common with sorting, filtering, and derived values.
+
 
 **Example:**
 ```jsx
