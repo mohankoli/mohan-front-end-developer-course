@@ -82,7 +82,7 @@ const inputRef = useRef();
 
 ---
 
-## 22. `useCallback` Hook
+## 5. `useCallback` Hook
 
 -- `useCallback` memoizes (remembers) a function between renders.
 - It prevents the function from being recreated on every re-render.
