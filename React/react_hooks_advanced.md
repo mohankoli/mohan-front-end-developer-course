@@ -164,6 +164,23 @@ function useLocalStorage(key, initial) {
 
   return [value, setValue];
 }
+
+function App() {
+  const [name, setName] = useLocalStorage("username", "");
+
+  return (
+    <div>
+      <input
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+        placeholder="Enter name..."
+      />
+
+      <p>Stored Name: {name}</p>
+    </div>
+  );
+}
+
 ```
 
 ---
