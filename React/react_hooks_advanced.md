@@ -282,7 +282,7 @@ const Dashboard = React.lazy(() => import('./Dashboard'));
 
 ---
 
-## 32. `useImperativeHandle` Hook
+## 14. `useImperativeHandle` Hook
 
 - It allows a child component to decide what functions or values the parent can access through a ref.
 - It gives the child control over what is exposed to the parent.
@@ -291,10 +291,14 @@ const Dashboard = React.lazy(() => import('./Dashboard'));
 
 ---
 
-## 33. Higher Order Component (HOC)
+## 15. Higher Order Component (HOC)
 
-- Function that takes a component and returns a new component.
-- Enhances component without modifying it directly.
+- A Higher Order Component (HOC) is a function that takes a component and returns a new component.
+- It adds extra features or behavior without changing the original component directly.
+- Allows reusing logic across multiple components.
+- Commonly used for cross-cutting concerns like logging, authorization, fetching, or theming.
+- Follows the pattern: `const Enhanced = withSomething(Component)`.
+
 
 **Example:**
 ```jsx
