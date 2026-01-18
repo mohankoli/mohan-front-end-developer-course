@@ -64,10 +64,15 @@ const [state, dispatch] = useReducer(reducer, { count: 0 });
 
 ---
 
-## 21. `useRef` Hook
+## 4. `useRef` Hook
 
-- Stores mutable values without causing re-renders.
-- Can reference DOM elements.
+- `useRef` stores values that do not trigger re-renders when changed.
+- It can point to DOM elements (like input, div, etc.).
+- Useful for accessing or controlling DOM without query selectors.
+- Can hold previous values between renders.
+- Ref value stays the same across re-renders.
+- Updates to `.current` do not refresh the UI.
+
 
 **Example:**
 ```jsx
