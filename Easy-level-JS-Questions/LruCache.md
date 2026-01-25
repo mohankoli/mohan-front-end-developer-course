@@ -1,3 +1,14 @@
+# Simple LRU Cache (Array Based)
+
+This LRU cache stores items in usage order using a single array.  
+Most recently used (MRU) items are kept at the front.  
+Least recently used (LRU) items are removed from the end.
+
+---
+
+## Code
+
+```js
 class LRU {
   constructor(capacity) {
     this.capacity = capacity;
@@ -22,23 +33,16 @@ let lru = new LRU(3);
 console.log(lru.set(1)); // [1]
 console.log(lru.set(2)); // [2,1]
 console.log(lru.set(3)); // [3,2,1]
-
 console.log(lru.set(2)); // [2,3,1]
-
-
-// Usage Example
-
-let lru = new LruCache(3);
-
-lru.setItem(1);
-lru.setItem(2);
-lru.setItem(3);
-console.log(lru.cache); // [3, 2, 1]
-
-lru.setItem(2);
-console.log(lru.cache); // [2, 3, 1]
-
-lru.setItem(4);
-console.log(lru.cache); // [4, 2, 3] → 1 evicted (LRU)
 ```
+
+---
+
+## Notes
+
+- `unshift()` inserts as most recently used (MRU)
+- `pop()` removes least recently used (LRU)
+- Array ordering: `[MRU → ... → LRU]`
+- Easy to explain in interviews
+
 
