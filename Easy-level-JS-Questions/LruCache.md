@@ -1,40 +1,30 @@
-# LRU Cache (Array-Based) — JavaScript
+class LRU {
+  constructor(capacity) {
+    this.capacity = capacity;
+    this.store = [];
+  }
 
-```js
-class LruCache {
-    constructor(capacity) {
-        this.capacity = capacity;
-        this.cache = [];
+  set(item) {
+    let index = this.store.indexOf(item);
+
+    if (index !== -1) {
+      this.store.splice(index, 1);
+    } else if (this.store.length === this.capacity) {
+      this.store.pop();
     }
 
-    isCapacityFull() {
-        return this.cache.length >= this.capacity;
-    }
-
-    getItem(item) {
-        return this.cache.indexOf(item);
-    }
-
-    setItem(item) {
-        const index = this.getItem(item);
-
-        if (index !== -1) {
-            // Cache HIT → move to front (most recently used)
-            this.cache.splice(index, 1);
-            this.cache.unshift(item);
-            return;
-        }
-
-        // Cache MISS
-        if (this.isCapacityFull()) {
-            // Evict least recently used (last element)
-            this.cache.pop();
-        }
-
-        // Insert new item as most recently used
-        this.cache.unshift(item);
-    }
+    this.store.unshift(item);
+    return this.store;
+  }
 }
+
+let lru = new LRU(3);
+console.log(lru.set(1)); // [1]
+console.log(lru.set(2)); // [2,1]
+console.log(lru.set(3)); // [3,2,1]
+
+console.log(lru.set(2)); // [2,3,1]
+
 
 // Usage Example
 
