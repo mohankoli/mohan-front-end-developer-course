@@ -1,68 +1,63 @@
-# EventEmitter – Simple Publisher/Subscriber in JavaScript
+# Simple Pub/Sub Implementation in JavaScript
 
-This is a very easy implementation of an **EventEmitter**, often asked in interviews.  
-It supports:
-
-- `on(event, fn)` → subscribe  
-- `emit(event, args)` → publish  
-- `off(event)` → clear all listeners  
+This is a minimal implementation of the Publish–Subscribe pattern, often used in event-driven backend systems.
 
 ---
 
 ## Code
 
 ```js
-function EventEmitter() {
-    let events = {};
-    return {
-        on(event, fn) {
-            events[event] = events[event] ? events[event] : [];
-            events[event].push(fn);
-        },
-        off(event) {
-            events[event] = [];
-        },
-        emit(event, ...args) {
-             events[event] = events[event] ? events[event] : [];
-             events[event].forEach(fn => fn(...args));
-        }
+class Pubsub {
+  constructor() {
+    this.events = {};
+  }
+
+  subscribe(event, listener) {
+    if (!this.events[event]) {
+      this.events[event] = [];
     }
+    this.events[event].push(listener);
+  }
+
+  publish(event, data) {
+    if (this.events[event]) {
+      this.events[event].forEach(listener => listener(data));
+    }
+  }
 }
+
+const ps = new Pubsub();
+
+ps.subscribe("order", (data) => {
+  console.log("email", data);
+});
+
+ps.subscribe("order", (data) => {
+  console.log("analytics", data);
+});
+
+ps.publish("order", { id: 1, product: 'book' });
 ```
 
 ---
 
-## Usage Example
+## Expected Output
 
-```js
-const emitter = EventEmitter();
-
-function sayHello(name) {
-  console.log("Hello " + name);
-}
-
-emitter.on("hi", sayHello);
-
-emitter.emit("hi", "Mohan");  // Output: Hello Mohan
-
-emitter.off("hi");            // remove all "hi" listeners
-
-emitter.emit("hi", "Koli");   // No output (listeners removed)
+```
+email { id: 1, product: 'book' }
+analytics { id: 1, product: 'book' }
 ```
 
 ---
 
-## Concepts
+## Explanation
 
-### ✔ Publisher/Subscriber Pattern
-- **Publisher** → sends events  
-- **Subscriber** → listens for events  
-- EventEmitter manages communication between them.
+- `subscribe(event, listener)` registers handlers for a given event.
+- `publish(event, data)` triggers all listeners for that event.
+- Decouples event producers from event consumers.
 
-### ✔ Why interviewers ask this?
-It tests:
-- Closures  
-- Objects  
-- Arrays  
-- Basic data structures  
-- Understanding of observers/events  
+This pattern is used in:
+- Microservices
+- Event buses
+- Message queues (Kafka, RabbitMQ)
+- Real-time systems
