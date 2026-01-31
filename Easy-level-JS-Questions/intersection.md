@@ -1,3 +1,16 @@
+# Intersection of Two Arrays (Unique Values)
+
+## Problem
+Find the **intersection** of two arrays such that:
+- Only **common elements** are returned
+- **Duplicates are not allowed**
+- Use `indexOf`
+
+---
+
+## Solution (Using `indexOf`)
+
+```js
 let intersection = (arr1, arr2) => {
     let result = [];
 
@@ -13,8 +26,3 @@ let intersection = (arr1, arr2) => {
     return result;
 };
 
-// Example
-let a = [1, 2, 2, 3, 4];
-let b = [2, 3, 5];
-
-console.log(intersection(a, b)); // [2, 3]
