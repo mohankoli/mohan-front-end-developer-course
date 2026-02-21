@@ -12,7 +12,8 @@
 ---
 
 ### 2. What is an Observable?
-**Answer:** An Observable represents a lazy stream of multiple values over time that can be subscribed to.
+**Answer:**A Subscription is the result of subscribing to an Observable.
+It represents the execution of the Observable and gives us control over the async stream.
 
 ---
 
