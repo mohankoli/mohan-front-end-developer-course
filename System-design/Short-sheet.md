@@ -10,8 +10,6 @@ Requests/day
 = 10M × 20  
 = 200M
 
----
-
 ## QPS
 QPS = Requests/day / 86400
 
@@ -19,8 +17,6 @@ QPS = Requests/day / 86400
 
 Read 80%  ≈ 1800  
 Write 20% ≈ 500
-
----
 
 ## Storage
 300M notifications/day  
@@ -33,8 +29,6 @@ Yearly
 
 Replication ×3  
 ≈ 330 TB
-
----
 
 ## Bandwidth
 Bandwidth = QPS × payload
@@ -58,8 +52,6 @@ CPU cores = QPS × request time
 
 Servers (8 cores)  
 ≈ 8 servers
-
----
 
 ## Redis Memory
 Users = 10M  
