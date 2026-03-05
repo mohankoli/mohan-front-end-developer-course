@@ -1,11 +1,8 @@
 # System Design Quick Sheet
 
 ## Assumption
-Users = 100M  
-Active Users = 10M  
-
+Users = 100M  | Active Users = 10M  
 Avg requests/user = 20  
-
 Requests/day  
 = 10M × 20  
 = 200M
@@ -14,9 +11,7 @@ Requests/day
 
 ## QPS
 QPS = Requests/day / 86400
-
 200M / 86400 ≈ 2315 QPS
-
 Read 80%  ≈ 1800  
 Write 20% ≈ 500
 
@@ -25,9 +20,7 @@ Write 20% ≈ 500
 ## Storage
 300M notifications/day  
 1 KB each
-
 Daily = 300 GB  
-
 Yearly  
 300 × 365 ≈ 110 TB  
 
@@ -38,10 +31,8 @@ Replication ×3
 
 ## Bandwidth
 Bandwidth = QPS × payload
-
 3000 QPS × 1 KB  
 ≈ 3 MB/sec
-
 Per hour  
 ≈ 10.8 GB
 
@@ -52,7 +43,6 @@ Per day
 
 ## CPU
 CPU cores = QPS × request time
-
 3000 × 0.02s  
 = 60 cores
 
