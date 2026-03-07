@@ -27,3 +27,23 @@ documents = [
 query = [0.25,0.75,0.55]
 
 k = 3
+
+function search(documents, query, k) {
+
+    let results = documents.map(doc => {
+
+        let score = 0
+
+        for(let i = 0; i < query.length; i++) {
+            score += doc.vector[i] * query[i]
+        }
+
+        return { id: doc.id, score }
+    })
+
+    results.sort((a,b) => b.score - a.score)
+
+    return results.slice(0,k)
+}
+
+console.log(search(documents, query, k))
